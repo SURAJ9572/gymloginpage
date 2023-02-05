@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS Reset   */
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: wheat;
+        margin: 0px;
+        padding: 0px;
+        background: url("image/gym.jpg");
+        background-size: cover;
+
+
+    }
+
+    .left img {
+        width: 120px;
+        filter: invert(100%);
+
+    }
+
+    .left div {
+        line-height: 4px;
+        font-size: 18px;
+        text-align: center;
+
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+
+
+
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 25px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 11px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 2px 9px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: auto;
+        border: 2px solid white;
+        margin-top: 100px;
+        margin-left: 0px;
+
+        padding: 30px;
+        width: 18%;
+        border-radius: 20px;
+    }
+
+    .form-group input {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        display: block;
+        width: 200px;
+        padding: 0px;
+        margin: 5px auto;
+        border: 2px solid black;
+        font-size: 15px;
+        border-radius: 9px;
+    }
+
+    .container h4 {
+        /* border: 3px solid white; */
+        /* border: 3px solid white; */
+        /* border-radius: 4px; */
+
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 75%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+
+            <img src="image/logo.jpg" alt="">
+            <div>Suraj Fitness</div>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+
+
+
+            </ul>
+
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right ">
+            <buttton class="btn">Call us now</buttton>
+            <buttton class="btn">Email us</buttton>
+
+        </div>
+
+
+
+    </header>
+    <div class="container">
+        <h4>Join The Best Gym Of Gaurichak Patna</h4>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
